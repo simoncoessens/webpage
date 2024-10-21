@@ -119,7 +119,7 @@ export const About: FC = () => {
 					/>
 					{/* Add your image here */}
 					<motion.img
-						src="/assets/bdma_group.png"
+						src="https://github.com/simoncoessens/webpage/blob/main/public/assets/bdma_group.png?raw=true"
 						className="mt-8 w-full max-w-sm rounded-lg shadow-lg"
 						alt="BDMA group"
 						whileHover={{ scale: 1.1 }}

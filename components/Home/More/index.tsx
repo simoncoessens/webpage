@@ -10,22 +10,30 @@ export const More: FC = () => {
 				{!useMediaQuery(1024) && (
 					<>
 						<motion.img
-							src={"/assets/zama.jpg"} // Additional image 1
+							src={
+								"https://github.com/simoncoessens/webpage/blob/main/public/assets/zama.JPG?raw=true"
+							} // Additional image 1
 							className="w-[300px] rounded-lg -mt-8 ml-4 absolute left-[25px] 2xl:left-40 top-[400px]"
 							whileHover={{ scale: 1.25 }}
 						/>
 						<motion.img
-							src={"/assets/leads.png"} // Image for A.N.N.A.
+							src={
+								"https://github.com/simoncoessens/webpage/blob/main/public/assets/leads.png?raw=true"
+							} // Image for A.N.N.A.
 							className="w-80 rounded-lg my-auto mt-32 absolute bottom-80"
 							whileHover={{ scale: 1.25 }}
 						/>
 						<motion.img
-							src={"/assets/scholaria.jpeg"} // Image for ScholarIA
+							src={
+								"https://github.com/simoncoessens/webpage/blob/main/public/assets/scholaria.jpeg?raw=true"
+							} // Image for ScholarIA
 							className="w-[250px] rounded-lg -mt-0 ml-0 absolute left-[450px] 2xl:left-[480px] top-5"
 							whileHover={{ scale: 1.25 }}
 						/>
 						<motion.img
-							src={"/assets/zama_hackathon.png"} // Image for Neurocrypt
+							src={
+								"https://github.com/simoncoessens/webpage/blob/main/public/assets/zama_hackathon.png?raw=true"
+							} // Image for Neurocrypt
 							className="w-72 mt-[300px] rounded-lg -ml-20 absolute -bottom-32 right-[-70px] shadow-lg shadow-pastel-black"
 							whileHover={{ scale: 1.25 }}
 						/>
