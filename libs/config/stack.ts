@@ -62,7 +62,7 @@ export const STACK = [
 	{
 		name: "GitHub",
 		logo: "github.png",
-		href: "https://github.com/sponsors/loom4k",
+		href: "https://github.com/simoncoessens",
 		hoverColor: "hover:bg-pastel-pink",
 	},
 	{

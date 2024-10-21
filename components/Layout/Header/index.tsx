@@ -259,7 +259,7 @@ const MobileDropDown = () => {
 						"https://hidemyemail.cc/a5f135c348ace656c125b7f87aee3bc6")
 				}
 			>
-				<p className="text-epic-black">contact@loom4k.me</p>
+				<p className="text-epic-black">simon.coessens@telenet.be</p>
 			</motion.div>
 		</motion.div>
 	);

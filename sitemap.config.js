@@ -1,5 +1,5 @@
 /* eslint-disable */
 module.exports = {
-	siteUrl: "https://loom4k.me",
+	siteUrl: "https://simoncoessens.github.io/webpage/",
 	generateRobotsTxt: true,
 };
