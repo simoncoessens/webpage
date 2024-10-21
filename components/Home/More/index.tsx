@@ -93,19 +93,31 @@ export const More: FC = () => {
 				{useMediaQuery(767) && (
 					<div className="flex flex-row relative">
 						<motion.img
-							src="/assets/bdma_group.png"
-							className="mt-8 w-full max-w-sm rounded-lg shadow-lg"
-							alt="BDMA group"
-							whileHover={{ scale: 1.1 }}
-						/>
-						<motion.img
-							src={"/assets/scholaria_project.png"} // Image for ScholarIA
-							className="w-64 h-64 mt-16 rounded-lg mx-auto flex flex-row absolute right-6"
+							src={
+								"https://github.com/simoncoessens/webpage/blob/main/public/assets/zama.JPG?raw=true"
+							} // Additional image 1
+							className="w-[300px] rounded-lg -mt-8 ml-4 absolute left-[25px] 2xl:left-40 top-[400px]"
 							whileHover={{ scale: 1.25 }}
 						/>
 						<motion.img
-							src={"/assets/neurocrypt_project.png"} // Image for Neurocrypt
-							className="w-72 mt-32 rounded-lg mx-auto shadow-lg shadow-pastel-black flex flex-row"
+							src={
+								"https://github.com/simoncoessens/webpage/blob/main/public/assets/leads.png?raw=true"
+							} // Image for A.N.N.A.
+							className="w-80 rounded-lg my-auto mt-32 absolute bottom-80"
+							whileHover={{ scale: 1.25 }}
+						/>
+						<motion.img
+							src={
+								"https://github.com/simoncoessens/webpage/blob/main/public/assets/scholaria.jpeg?raw=true"
+							} // Image for ScholarIA
+							className="w-[250px] rounded-lg -mt-0 ml-0 absolute left-[450px] 2xl:left-[480px] top-5"
+							whileHover={{ scale: 1.25 }}
+						/>
+						<motion.img
+							src={
+								"https://github.com/simoncoessens/webpage/blob/main/public/assets/zama_hackathon.png?raw=true"
+							} // Image for Neurocrypt
+							className="w-72 mt-[300px] rounded-lg -ml-20 absolute -bottom-32 right-[-70px] shadow-lg shadow-pastel-black"
 							whileHover={{ scale: 1.25 }}
 						/>
 					</div>
