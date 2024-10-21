@@ -67,7 +67,7 @@ export const More: FC = () => {
 					<br />
 					<br />
 					<a
-						href="https://github.com/simoncoessens/ScholarIA"
+						href="https://github.com/simoncoessens/scholaria-app"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
