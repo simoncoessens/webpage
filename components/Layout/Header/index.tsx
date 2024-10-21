@@ -23,12 +23,6 @@ const links = [
 		open: true,
 	},
 	{
-		name: "stack",
-		href: "/stack",
-		slash: "slash",
-		open: true,
-	},
-	{
 		name: "hire",
 		href: "/hire",
 		slash: "slash",
@@ -40,12 +34,7 @@ const links = [
 		slash: "slash",
 		open: false,
 	},
-	{
-		name: "sponsorme",
-		href: "https://github.com/sponsors/loom4k",
-		slash: "arrow",
-		open: true,
-	},
+	// Removed "sponsorme" link
 ];
 
 export const Header: FC = () => {
@@ -54,19 +43,17 @@ export const Header: FC = () => {
 
 	return (
 		<>
-			<div id="top" className="h-2 w-full bg-pastel-green"></div>
+			<div id="top" className="h-2 w-full bg-gray"></div>
 			<motion.div
 				className={`fixed md:static top-0 w-screen md:w-auto h-24 md:h-48 px-8 md:px-24 2xl:px-56
                     flex flex-row lg:relative
-                    ${
-						mobileMenuOpen ? "bg-epic-black-light" : "bg-epic-black"
-					}`}
+                    ${mobileMenuOpen ? "bg-epic-black-light" : "white"}`}
 			>
 				<h1
 					onClick={() => {
 						window.location.href = "/";
 					}}
-					className="flex flex-row justify-center items-center text-white text-3xl mr-5"
+					className="flex flex-row justify-center items-center text-black text-3xl mr-5"
 				>
 					<div className="hover:cursor-pointer">
 						{CONFIG.NICKNAME}
@@ -115,7 +102,7 @@ const HeaderLink = ({ name, href, slash }: HeaderLinkProps) => {
 		<div
 			className={`invisible md:visible
         flex flex-row justify-center items-center 
-        text-white
+        text-black
         mt-2.5 ml-10`}
 		>
 			<motion.div
@@ -149,12 +136,11 @@ const ContactButton = () => {
 		<>
 			<button
 				className="invisible md:visible
-						flex flex-row justify-center items-center 
-						text-white text-xl 
-						ml-auto hover:cursor-default"
+			flex flex-row justify-center items-center 
+			text-black text-xl 
+			ml-auto hover:cursor-default"
 				onClick={() =>
-					(window.location.href =
-						"https://hidemyemail.cc/a5f135c348ace656c125b7f87aee3bc6")
+					(window.location.href = "mailto:simon.coessens@telenet.be")
 				}
 			>
 				<motion.div
@@ -165,7 +151,7 @@ const ContactButton = () => {
 					onHoverEnd={() => setButtonHovered(false)}
 					className="w-10 h-10 lg:w-[136px]
 					rounded-full lg:rounded-md 
-					bg-pastel-green 
+					bg-gray 
 					hover:cursor-pointer"
 				>
 					<p className="mt-1.5 text-epic-black text-left">
@@ -177,8 +163,8 @@ const ContactButton = () => {
 				</motion.div>
 			</button>
 			{!useMediaQuery(1023) ? (
-				<p className="text-white text-[10px] absolute top-[120px] right-[106px] 2xl:right-[234px]">
-					(contact@loom4k.me)
+				<p className="text-black text-[10px] absolute top-[120px] right-[106px] 2xl:right-[234px]">
+					(simon.coessens@telenet.be)
 				</p>
 			) : null}
 		</>
@@ -197,7 +183,7 @@ const MobileNavButton = ({ func, mobileMenuOpen }: MobileNavButtonProps) => {
 		<button
 			className="visible md:invisible
                     flex flex-row justify-center items-center
-                    text-white text-xl
+                    text-black text-xl
                     ml-auto hover:cursor-default"
 			onClick={() => {
 				if (hiddenOverflow == false) {
@@ -247,7 +233,7 @@ const MobileDropDown = () => {
 						}}
 						key={key}
 					>
-						<p className="text-white text-xl">
+						<p className="text-black text-xl">
 							{link.slash == "slash" ? (
 								<Highlight>/</Highlight>
 							) : null}
@@ -264,7 +250,7 @@ const MobileDropDown = () => {
 				);
 			})}
 			<motion.div
-				className="hover:cursor-pointer bg-pastel-green
+				className="hover:cursor-pointer bg-gray
             text-center text-xl py-2.5 rounded-md
             mt-2.5"
 				whileHover={{

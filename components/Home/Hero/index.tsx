@@ -13,54 +13,32 @@ export const Hero: FC = () => {
 		<div
 			className="w-full mt-24 md:mt-0
                 flex flex-row
-                bg-epic-black text-center md:text-left"
+                bg-white text-center md:text-left"
 		>
 			{useMediaQuery(768) && <div></div>}
 			<div
 				className="flex flex-col w-full md:w-4/5 lg:w-1/2
             		px-8 sm:px-20 md:px-24 md:pr-6 2xl:pl-56 pt-16"
 			>
-				<h1 className="text-6xl tracking-tighter text-white">
+				<h1 className="text-6xl tracking-tighter text-black">
 					{CONFIG.NAME}
-					{!useMediaQuery(768) ? (
-						<p className="text-3xl">
-							<i>aka&nbsp;</i>
-							<Highlight>{CONFIG.AKA}</Highlight>
-						</p>
-					) : null}
 				</h1>
-				<p className="mt-6 text-white text-md">
-					I am a {date - 2007} year old software developer living{" "}
+				<p className="mt-6 text-black text-md">
+					I am a {date - 2001} year old student and developer living
 					{!useMediaQuery(980) && <br />}in&nbsp;{CONFIG.LOCATION}.
 					<br />
-					<br />I have <Highlight>
-						over {date - 2019} years
-					</Highlight>{" "}
-					of experience in software development, and I am currently
-					working with&nbsp;
-					<LanguageLink
-						name={"typescript"}
-						href={"https://www.typescriptlang.org/"}
-						color={"text-pastel-blurple"}
-					/>
-					,&nbsp;
-					<LanguageLink
-						name={"java"}
-						href={"https://www.java.com/"}
-						color={"text-pastel-orange"}
-					/>
-					&nbsp;and&nbsp;
-					<LanguageLink
-						name={"c#"}
-						href={"https://docs.microsoft.com/en-us/dotnet/csharp/"}
-						color={"text-pastel-pink"}
-					/>
-					<br />
-					<br />
-					Right now, I am{" "}
+					<br />I am currently pursuing a{" "}
 					<Highlight>
-						<Status />
-					</Highlight>
+						Master's in Big Data Management and Analytics (BDMA)
+					</Highlight>{" "}
+					at CentraleSupélec in Paris. My academic journey has taken
+					me across <Highlight>Europe</Highlight>, including studies
+					in Belgium, Spain, and now France. I have completed degrees
+					in <span className="font-bold">Computer Science</span> and{" "}
+					<span className="font-bold">Mathematics</span> at KU Leuven.
+					I have <Highlight>over {date - 2019} years</Highlight> of
+					experience in computer science and math projects.
+					<br />
 				</p>
 			</div>
 			{!useMediaQuery(1023) && (
@@ -70,9 +48,9 @@ export const Hero: FC = () => {
 						whileHover={{ scale: 1.025 }}
 					>
 						<img
-							src={CONFIG.AVATAR_URL} // Can be changed with "CONFIG.AVATAR_URL" (i use downloaded image cause my grandparent's internet is complete garbage)
-							alt="loom4k"
-							className="mx-auto md:h-128 md:w-128 w-full max-w-lg object-cover rounded-3xl"
+							src={CONFIG.AVATAR_URL}
+							alt="Simon Coessens"
+							className="mx-auto md:h-96 md:w-96 w-full max-w-md object-cover rounded-3xl" // Reduced the size here
 						/>
 					</motion.div>
 				</div>

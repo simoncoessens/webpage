@@ -5,7 +5,7 @@ type HighlightProps = {
 };
 
 export const Highlight = (props: HighlightProps) => {
-	return <span className="text-pastel-green">{props.children}</span>;
+	return <span className="text-gray">{props.children}</span>;
 };
 
 export default Highlight;

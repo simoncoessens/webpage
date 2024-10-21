@@ -6,7 +6,7 @@ import { FC } from "react";
 export const Stack: FC = () => {
 	return (
 		<div>
-			<div className="flex flex-col text-white px-60">
+			<div className="flex flex-col text-black px-60">
 				<h1 className="flex flex-col mx-auto text-3xl tracking-tightest">
 					Technologies I use &amp; support
 				</h1>
@@ -59,7 +59,7 @@ const StackCard = ({ name, logo, lang }: IStackCard) => {
 				src={`./assets/langs/${logo}`}
 				className="w-20 h-20 mx-auto mt-6 rounded-md"
 			></img>
-			<p className="mx-auto my-auto text-white">{name}</p>
+			<p className="mx-auto my-auto text-black">{name}</p>
 		</motion.div>
 	);
 };

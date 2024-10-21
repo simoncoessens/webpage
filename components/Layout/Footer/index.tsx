@@ -1,16 +1,16 @@
 import { FC } from "react";
-import { HiOutlineHeart } from "react-icons/hi";
-import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"; // Removed HiOutlineHeart import
 import { motion } from "framer-motion";
 
 export const Footer: FC = () => {
 	return (
-		<div className="bg-epic-black w-full h-24 mt-24 flex flex-row text-white">
+		<div className="bg-white w-full h-24 mt-24 flex flex-row text-black">
 			<div className="flex flex-row h-full w-full">
 				<div className="mx-auto my-auto text-2xl flex flex-row">
 					<motion.div
 						onClick={() => {
-							window.location.href = "https://github.com/loom4k";
+							window.location.href =
+								"https://github.com/simoncoessens";
 						}}
 						whileHover={{ y: -5 }}
 						className="transition-colors ease-in-out hover:text-pastel-green"
@@ -20,22 +20,12 @@ export const Footer: FC = () => {
 					<motion.div
 						onClick={() => {
 							window.location.href =
-								"https://github.com/sponsors/loom4k";
-						}}
-						whileHover={{ y: -5 }}
-						className="transition-colors ease-in-out text-pastel-pink"
-					>
-						<HiOutlineHeart className="flex flex-row hover:cursor-pointer" />
-					</motion.div>
-					<motion.div
-						onClick={() => {
-							window.location.href =
-								"https://twitter.com/loom4kdoescode";
+								"https://www.linkedin.com/in/simon-coessens";
 						}}
 						whileHover={{ y: -5 }}
 						className="transition-colors ease-in-out hover:text-pastel-green"
 					>
-						<AiOutlineTwitter className="flex flex-row ml-6 hover:cursor-pointer" />
+						<AiFillLinkedin className="flex flex-row ml-6 hover:cursor-pointer" />
 					</motion.div>
 				</div>
 			</div>

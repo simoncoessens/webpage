@@ -1,8 +1,6 @@
 export const CONFIG = {
-	NAME: "Loïk Mallat",
-	AKA: "loom",
-	NICKNAME: "loom4k",
-	LOCATION: "Montreal, Canada",
-	TITLE: "Full-Stack Developer",
-	AVATAR_URL: "https://avatars.githubusercontent.com/u/58235265",
+	NAME: "Simon Coessens",
+	LOCATION: "Paris, France",
+	TITLE: "CS Master in Big Data Management and AI",
+	AVATAR_URL: "https://avatars.githubusercontent.com/u/56151036?v=4",
 };

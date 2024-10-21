@@ -13,7 +13,7 @@ const Home: NextPage<PageProps> = ({ lang }) => {
 			<Header />
 			<Hero />
 			<About />
-			<More />
+			<div className="my-64"></div> <More />
 			<Footer />
 		</div>
 	);
