@@ -21,11 +21,11 @@ export const Hero: FC = () => {
             		px-8 sm:px-20 md:px-24 md:pr-6 2xl:pl-56 pt-16"
 			>
 				<h1 className="text-6xl tracking-tighter text-black">
-					{CONFIG.NAME}
+					{"Simon Coessens"}
 				</h1>
 				<p className="mt-6 text-black text-md">
 					I am a {date - 2001} year old student and developer living
-					{!useMediaQuery(980) && <br />}in&nbsp;{CONFIG.LOCATION}.
+					{!useMediaQuery(980) && <br />}in Paris.
 					<br />
 					<br />I am currently pursuing a{" "}
 					<Highlight>
@@ -48,7 +48,9 @@ export const Hero: FC = () => {
 						whileHover={{ scale: 1.025 }}
 					>
 						<img
-							src={CONFIG.AVATAR_URL}
+							src={
+								"https://avatars.githubusercontent.com/u/56151036?v=4"
+							}
 							alt="Simon Coessens"
 							className="mx-auto md:h-96 md:w-96 w-full max-w-md object-cover rounded-3xl" // Reduced the size here
 						/>
