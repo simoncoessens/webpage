@@ -55,9 +55,7 @@ export const Header: FC = () => {
 					}}
 					className="flex flex-row justify-center items-center text-black text-3xl mr-5"
 				>
-					<div className="hover:cursor-pointer">
-						{CONFIG.NICKNAME}
-					</div>
+					<div className="hover:cursor-pointer">{""}</div>
 				</h1>
 
 				{!isBreakPoint &&
