@@ -21,23 +21,36 @@ export const Hero: FC = () => {
             		px-8 sm:px-20 md:px-24 md:pr-6 2xl:pl-56 pt-16"
 			>
 				<h1 className="text-6xl tracking-tighter text-black">
-					{"Simon Coessens"}
+					{CONFIG.NAME}
 				</h1>
 				<p className="mt-6 text-black text-md">
-					I am a {date - 2001} year old student and developer living
-					{!useMediaQuery(980) && <br />}in Paris.
+					I'm a {date - CONFIG.BIRTH_YEAR} year old developer and AI
+					researcher living
+					{!useMediaQuery(980) && <br />}in {CONFIG.LOCATION}.
 					<br />
-					<br />I am currently pursuing a{" "}
+					<br />I recently graduated with{" "}
+					<span className="font-bold">Highest Honours</span> from{" "}
 					<Highlight>
-						Master's in Big Data Management and Analytics (BDMA)
+						CentraleSupélec (Université Paris-Saclay)
 					</Highlight>{" "}
-					at CentraleSupélec in Paris. My academic journey has taken
-					me across <Highlight>Europe</Highlight>, including studies
-					in Belgium, Spain, and now France. I have completed degrees
-					in <span className="font-bold">Computer Science</span> and{" "}
-					<span className="font-bold">Mathematics</span> at KU Leuven.
-					I have <Highlight>over {date - 2019} years</Highlight> of
-					experience in computer science and math projects.
+					as part of the Erasmus Mundus <Highlight>BDMA</Highlight>{" "}
+					program. My thesis received the{" "}
+					<Highlight>
+						Master Thesis – Industrial Impact Award
+					</Highlight>
+					.
+					<br />
+					<br />I also hold degrees in{" "}
+					<span className="font-bold">Computer Science</span> and{" "}
+					<span className="font-bold">Mathematics</span> from{" "}
+					<Highlight>KU Leuven</Highlight>. My research spans{" "}
+					<Highlight>AI</Highlight>,{" "}
+					<Highlight>diffusion models</Highlight>, and{" "}
+					<Highlight>NLP</Highlight>. I have{" "}
+					<Highlight>
+						over {date - CONFIG.EXPERIENCE_START_YEAR} years
+					</Highlight>{" "}
+					of experience in CS and math projects.
 					<br />
 				</p>
 			</div>
@@ -48,11 +61,9 @@ export const Hero: FC = () => {
 						whileHover={{ scale: 1.025 }}
 					>
 						<img
-							src={
-								"https://avatars.githubusercontent.com/u/56151036?v=4"
-							}
-							alt="Simon Coessens"
-							className="mx-auto md:h-96 md:w-96 w-full max-w-md object-cover rounded-3xl" // Reduced the size here
+							src={CONFIG.AVATAR_URL}
+							alt={CONFIG.NAME}
+							className="mx-auto md:h-96 md:w-96 w-full max-w-md object-cover rounded-3xl"
 						/>
 					</motion.div>
 				</div>

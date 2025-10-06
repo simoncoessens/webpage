@@ -138,7 +138,7 @@ const ContactButton = () => {
 			text-black text-xl 
 			ml-auto hover:cursor-default"
 				onClick={() =>
-					(window.location.href = "mailto:simon.coessens@telenet.be")
+					(window.location.href = `mailto:${CONFIG.EMAIL}`)
 				}
 			>
 				<motion.div
@@ -162,7 +162,7 @@ const ContactButton = () => {
 			</button>
 			{!useMediaQuery(1023) ? (
 				<p className="text-black text-[10px] absolute top-[120px] right-[106px] 2xl:right-[234px]">
-					(simon.coessens@telenet.be)
+					({CONFIG.EMAIL})
 				</p>
 			) : null}
 		</>
@@ -255,11 +255,10 @@ const MobileDropDown = () => {
 					y: -5,
 				}}
 				onClick={() =>
-					(window.location.href =
-						"https://hidemyemail.cc/a5f135c348ace656c125b7f87aee3bc6")
+					(window.location.href = CONFIG.CONTACT_PROXY_URL)
 				}
 			>
-				<p className="text-epic-black">simon.coessens@telenet.be</p>
+				<p className="text-epic-black">{CONFIG.EMAIL}</p>
 			</motion.div>
 		</motion.div>
 	);

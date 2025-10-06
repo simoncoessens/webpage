@@ -78,8 +78,8 @@ export const STACK = [
 		hoverColor: "hover:bg-epic-black-light",
 	},
 	{
-		name: "Tensorflow ML",
-		logo: "tensorflow.png",
+		name: "PyTorch",
+		logo: "pytorch.svg",
 		href: "",
 		hoverColor: "hover:bg-epic-black-light",
 	},

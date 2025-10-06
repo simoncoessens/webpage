@@ -15,7 +15,7 @@ export const About: FC = () => {
           flex flex-col"
 			>
 				<p className="text-lg tracking-tightest font-bold">
-					<Highlight>Being a&nbsp;{CONFIG.TITLE}...</Highlight>
+					<Highlight>Computer Science graduate</Highlight>
 				</p>
 				<h1 className="text-6xl tracking-[-5px] text-black">
 					Who am I <Highlight>&amp;</Highlight> how did I get here?
@@ -37,21 +37,20 @@ export const About: FC = () => {
 						fascinated by the world of{" "}
 						<Highlight>finance</Highlight>, which led me to
 						participate in an{" "}
-						<Highlight>honours program in finance</Highlight> at the{" "}
-						<Highlight>University of Antwerp</Highlight> while still
-						in high school. This program allowed me to explore
+						<Highlight>honours program in finance</Highlight> at the
+						<Highlight> University of Antwerp</Highlight> while
+						still in high school. This program allowed me to explore
 						economic principles and financial markets, expanding my
 						knowledge into new areas.
 						<br />
 						<br />
 						After completing high school, I pursued a{" "}
-						<Highlight>
-							Bachelor's in Computer Science
-						</Highlight> at <Highlight>KU Leuven</Highlight>, eager
-						to dive deeper into{" "}
-						<Highlight>software development</Highlight> and{" "}
-						<Highlight>algorithmic problem-solving</Highlight>. As I
-						progressed, my curiosity grew, leading me to take on a{" "}
+						<Highlight>Bachelor's in Computer Science </Highlight>
+						at <Highlight> KU Leuven</Highlight>, eager to dive
+						deeper into
+						<Highlight> software development</Highlight> and
+						<Highlight> algorithmic problem-solving</Highlight>. As
+						I progressed, my curiosity grew, leading me to take on a{" "}
 						<Highlight>
 							supplementary Bachelor's in Mathematics
 						</Highlight>
@@ -61,24 +60,25 @@ export const About: FC = () => {
 						<br />
 						Balancing these two fields allowed me to develop a
 						versatile skill set, combining theoretical insights with
-						practical programming skills. This foundation set the
-						stage for my current studies in the{" "}
+						practical programming skills. This foundation led me to
+						complete the{" "}
 						<Highlight>
 							Big Data Management and Analytics (BDMA)
 						</Highlight>{" "}
-						Erasmus Mundus program. My academic journey has taken me
-						across <Highlight>Europe</Highlight>, from{" "}
-						<Highlight>Université Libre de Bruxelles</Highlight> in
-						Belgium to{" "}
+						Erasmus Mundus program. My academic journey took me
+						across <Highlight>Europe</Highlight>, from
+						<Highlight> Université Libre de Bruxelles</Highlight> in
+						Belgium to
 						<Highlight>
+							{" "}
 							Universitat Politècnica de Catalunya
 						</Highlight>{" "}
-						in Spain, and now to{" "}
-						<Highlight>CentraleSupélec</Highlight> in Paris. I also
-						participated in the{" "}
+						in Spain, and finally to
+						<Highlight> CentraleSupélec</Highlight> in Paris, where
+						I graduated. I also participated in the{" "}
 						<Highlight>eBISS Summer School</Highlight> in Italy,
-						furthering my expertise in{" "}
-						<Highlight>data science</Highlight> and its real-world
+						furthering my expertise in
+						<Highlight> data science</Highlight> and its real-world
 						applications.
 					</p>
 				</div>
@@ -94,9 +94,9 @@ export const About: FC = () => {
 						ikey={0}
 					/>
 					<DesktopCodeComponent
-						lang={"tensorflow"}
+						lang={"pytorch"}
 						level={"w-2/3"}
-						logo={"tensorflow"}
+						logo={"pytorch"}
 						ikey={1}
 					/>
 					<DesktopCodeComponent
@@ -121,49 +121,6 @@ export const About: FC = () => {
 					<motion.img
 						src="https://github.com/simoncoessens/webpage/blob/main/public/assets/bdma_group.png?raw=true"
 						className="mt-8 w-full max-w-sm rounded-lg shadow-lg"
-						alt="BDMA group"
-						whileHover={{ scale: 1.1 }}
-					/>
-				</div>
-			) : null}
-
-			{/* Mobile View */}
-			{useMediaQuery(768) ? (
-				<div className="flex flex-col w-full bg-epic-black pt-10 items-center">
-					<MobileCodeComponent
-						lang={"python"}
-						level={"w-full"}
-						logo={"python"}
-						ikey={0}
-					/>
-					<MobileCodeComponent
-						lang={"tensorflow"}
-						level={"w-2/3"}
-						logo={"tensorflow"}
-						ikey={1}
-					/>
-					<MobileCodeComponent
-						lang={"r"}
-						level={"w-1/2"}
-						logo={"r"}
-						ikey={2}
-					/>
-					<MobileCodeComponent
-						lang={"matlab"}
-						level={"w-1/2"}
-						logo={"matlab"}
-						ikey={3}
-					/>
-					<MobileCodeComponent
-						lang={"javascript"}
-						level={"w-1/3"}
-						logo={"javascript"}
-						ikey={4}
-					/>
-					{/* Add your image here */}
-					<motion.img
-						src="/assets/bdma_group.png"
-						className="mt-8 w-full max-w-xs rounded-lg shadow-lg"
 						alt="BDMA group"
 						whileHover={{ scale: 1.1 }}
 					/>

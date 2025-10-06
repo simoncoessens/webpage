@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"; // Removed HiOutlineHeart import
+import { CONFIG } from "@root/libs/config";
 import { motion } from "framer-motion";
 
 export const Footer: FC = () => {
@@ -9,8 +10,7 @@ export const Footer: FC = () => {
 				<div className="mx-auto my-auto text-2xl flex flex-row">
 					<motion.div
 						onClick={() => {
-							window.location.href =
-								"https://github.com/simoncoessens";
+							window.location.href = CONFIG.SOCIALS.GITHUB;
 						}}
 						whileHover={{ y: -5 }}
 						className="transition-colors ease-in-out hover:text-pastel-green"
@@ -19,8 +19,7 @@ export const Footer: FC = () => {
 					</motion.div>
 					<motion.div
 						onClick={() => {
-							window.location.href =
-								"https://www.linkedin.com/in/simon-coessens";
+							window.location.href = CONFIG.SOCIALS.LINKEDIN;
 						}}
 						whileHover={{ y: -5 }}
 						className="transition-colors ease-in-out hover:text-pastel-green"
