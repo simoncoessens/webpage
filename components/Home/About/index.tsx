@@ -2,6 +2,9 @@ import Highlight from "@components/Highlight";
 import { motion } from "framer-motion";
 import { FC, useState } from "react";
 
+const assetBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const getAssetPath = (path: string) => `${assetBasePath}${path}`;
+
 export const About: FC = () => {
 	const [lightboxMedia, setLightboxMedia] = useState<null | {
 		type: "image" | "video";
@@ -31,9 +34,9 @@ export const About: FC = () => {
 						badge="ICCV 2025 · Spotlight"
 						description="Spotlight talk at ICCV 2025 (SP4V workshop). Training‑free 360° panorama generation from arbitrarily posed inputs using SEVA multi‑view diffusion and a pose‑aware stitcher. Ongoing research."
 						mediaType="video"
-						mediaSrc="/assets/multiviewpano_video.mp4"
+						mediaSrc={getAssetPath("/assets/multiviewpano_video.mp4")}
 						mediaAlt="MultiViewPano demo"
-						logoSrc="/assets/amadeus_logo.png"
+						logoSrc={getAssetPath("/assets/amadeus_logo.png")}
 						logoAlt="Amadeus logo"
 						onOpenMedia={(payload) => setLightboxMedia(payload)}
 						links={[
@@ -51,9 +54,9 @@ export const About: FC = () => {
 						title="Agentic Video Generation Pipeline (Amadeus)"
 						description="Developed an agentic pipeline for video generation during my internship at Amadeus, using LangGraph and experimenting with available video generation models to orchestrate automated script‑to‑video workflows."
 						mediaType="video"
-						mediaSrc="/assets/agentic_video_project.mp4"
+						mediaSrc={getAssetPath("/assets/agentic_video_project.mp4")}
 						mediaAlt="Agentic video generation pipeline demo"
-						logoSrc="/assets/amadeus_logo.png"
+						logoSrc={getAssetPath("/assets/amadeus_logo.png")}
 						logoAlt="Amadeus logo"
 						onOpenMedia={(payload) => setLightboxMedia(payload)}
 					/>
@@ -61,7 +64,7 @@ export const About: FC = () => {
 						title="DSA compliance tool (Agentic AI)"
 						description="Prototype agentic copilot for DSA compliance, built with Prof. Antonio Davola and Vittorio Franceze to blend legal expertise with LangChain + GraphRAG automation. On track for a broader launch, with the next milestone being the DSA & Platform Regulation Conference 2026 (University of Amsterdam)."
 						mediaType="video"
-						mediaSrc="/assets/dsa_compliance.mp4"
+						mediaSrc={getAssetPath("/assets/dsa_compliance.mp4")}
 						mediaAlt="DSA compliance tool demo"
 						onOpenMedia={(payload) => setLightboxMedia(payload)}
 						links={[
@@ -75,9 +78,9 @@ export const About: FC = () => {
 						title="GaussianDiffusion: 2D Gaussian Splatting Latent Diffusion"
 						description="Diffusion-based image generation operating in a latent space of 2D Gaussian splats. Research project @ CentraleSupélec; presented at JDSE 2025."
 						mediaType="video"
-						mediaSrc="/assets/gaussiandiffusion.mp4"
+						mediaSrc={getAssetPath("/assets/gaussiandiffusion.mp4")}
 						mediaAlt="GaussianDiffusion demo"
-						logoSrc="/assets/centralesupelec_logo.png"
+						logoSrc={getAssetPath("/assets/centralesupelec_logo.png")}
 						logoAlt="CentraleSupélec logo"
 						onOpenMedia={(payload) => setLightboxMedia(payload)}
 						links={[

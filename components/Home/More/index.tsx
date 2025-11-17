@@ -1,16 +1,19 @@
 import { motion } from "framer-motion";
 import { FC, useState } from "react";
 
+const assetBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const getAssetPath = (path: string) => `${assetBasePath}${path}`;
+
 const pictures = [
-	"/assets/zama.JPG",
-	"/assets/zama_2.JPG",
-	"/assets/leads.png",
-	"/assets/iccv_presentation.jpg",
-	"/assets/master_thesis.jpeg",
-	"/assets/scholaria.jpeg",
-	"/assets/zama_hackathon.png",
-	"/assets/bdma_group.JPG",
-	"/assets/upcxrevolut.jpeg",
+	getAssetPath("/assets/zama.JPG"),
+	getAssetPath("/assets/zama_2.JPG"),
+	getAssetPath("/assets/leads.png"),
+	getAssetPath("/assets/iccv_presentation.jpg"),
+	getAssetPath("/assets/master_thesis.jpeg"),
+	getAssetPath("/assets/scholaria.jpeg"),
+	getAssetPath("/assets/zama_hackathon.png"),
+	getAssetPath("/assets/bdma_group.JPG"),
+	getAssetPath("/assets/upcxrevolut.jpeg"),
 ];
 
 export const More: FC = () => {
