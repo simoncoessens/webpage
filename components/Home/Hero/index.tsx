@@ -89,3 +89,4 @@ const LanguageLink = ({ name, href, color }: LanguageLinkProps) => {
 };
 
 export default Hero;
+
