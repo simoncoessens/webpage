@@ -6,10 +6,12 @@
 /* Import other fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
+/* Font-face disabled - causing build issues with webpack resolution
 @font-face {
 	font-family: "JetBrains Mono";
 	src: url("/fonts/JetBrainsMono-Regular.ttf");
 }
+*/
 
 /* Font setup */
 :root {

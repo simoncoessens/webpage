@@ -15,22 +15,24 @@ const variants = {
 	initial: { y: 0 },
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const links = [
 	{
 		name: "home",
-		href: "/",
+		href: `${basePath}/`,
 		slash: "slash",
 		open: true,
 	},
 	{
 		name: "hire",
-		href: "/hire",
+		href: `${basePath}/hire`,
 		slash: "slash",
 		open: false,
 	},
 	{
 		name: "blog",
-		href: "/blog",
+		href: `${basePath}/blog`,
 		slash: "slash",
 		open: false,
 	},
@@ -51,7 +53,8 @@ export const Header: FC = () => {
 			>
 				<h1
 					onClick={() => {
-						window.location.href = "/";
+						const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+						window.location.href = `${basePath}/`;
 					}}
 					className="flex flex-row justify-center items-center text-black text-3xl mr-5"
 				>
