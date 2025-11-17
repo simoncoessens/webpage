@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/webpage" : "";
-const assetPrefix = isProd ? "/webpage" : "";
+// Site is deployed to root of GitHub Pages, so basePath should be empty
+const basePath = "";
+const assetPrefix = "";
 
 const nextConfig = {
 	output: "export",
