@@ -11,6 +11,13 @@
 	src: url("/fonts/JetBrainsMono-Regular.ttf");
 }
 
+/* Font setup */
+:root {
+	--name-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 /* Set the font family for the body */
 html {
 	font-size: 70%;
@@ -19,11 +26,12 @@ html {
 html,
 body {
 	overflow: none;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: var(--name-font);
 	background-color: theme("colors.white");
 	display: flex;
 	justify-content: center;
 }
+
 
 #__next {
 	width: 100%;

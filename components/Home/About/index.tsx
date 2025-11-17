@@ -24,7 +24,7 @@ export const About: FC = () => {
 				<p className="text-lg tracking-tightest font-bold">
 					<Highlight>Recent projects</Highlight>
 				</p>
-				<h1 className="text-6xl tracking-[-5px] text-black">
+				<h1 className="text-6xl tracking-normal text-black">
 					What I've been working on
 				</h1>
 
@@ -103,7 +103,7 @@ export const About: FC = () => {
 				</div>
 
 				<div className="mt-16">
-					<h2 className="text-3xl tracking-tight text-black">
+					<h2 className="name-font text-3xl tracking-tight text-black">
 						Other <Highlight>projects</Highlight>
 					</h2>
 					<p className="mt-4 text-black">

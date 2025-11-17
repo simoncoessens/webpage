@@ -21,7 +21,7 @@ export const More: FC = () => {
 
 	return (
 		<div className="w-full flex flex-col items-center text-center mt-24 px-8 sm:px-20 md:px-24 2xl:px-56">
-			<h1 className="text-6xl tracking-[-5px] font-bold text-black">
+			<h1 className="text-6xl tracking-normal font-bold text-black">
 				Some pictures
 			</h1>
 			<div className="mt-16 grid w-full gap-8 sm:grid-cols-2 lg:grid-cols-3">
