@@ -15,33 +15,48 @@ const variants = {
 	initial: { y: 0 },
 };
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const getBasePath = () => {
+	// Try to get from __NEXT_DATA__ first (available at runtime)
+	if (typeof window !== "undefined") {
+		const nextData = (window as any).__NEXT_DATA__;
+		if (nextData?.assetPrefix) {
+			return nextData.assetPrefix;
+		}
+	}
+	// Fallback to env var (available at build time)
+	// For production static export, this should be "/webpage"
+	return process.env.NEXT_PUBLIC_BASE_PATH || "";
+};
 
-const links = [
-	{
-		name: "home",
-		href: `${basePath}/`,
-		slash: "slash",
-		open: true,
-	},
-	{
-		name: "hire",
-		href: `${basePath}/hire`,
-		slash: "slash",
-		open: false,
-	},
-	{
-		name: "blog",
-		href: `${basePath}/blog`,
-		slash: "slash",
-		open: false,
-	},
-	// Removed "sponsorme" link
-];
+const getLinks = (basePath: string) => {
+	return [
+		{
+			name: "home",
+			href: `${basePath}/`,
+			slash: "slash",
+			open: true,
+		},
+		{
+			name: "hire",
+			href: `${basePath}/hire`,
+			slash: "slash",
+			open: false,
+		},
+		{
+			name: "blog",
+			href: `${basePath}/blog`,
+			slash: "slash",
+			open: false,
+		},
+		// Removed "sponsorme" link
+	];
+};
 
 export const Header: FC = () => {
 	const isBreakPoint = useMediaQuery(768);
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const basePath = getBasePath();
+	const links = getLinks(basePath);
 
 	return (
 		<>
@@ -53,7 +68,7 @@ export const Header: FC = () => {
 			>
 				<h1
 					onClick={() => {
-						const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+						const basePath = getBasePath();
 						window.location.href = `${basePath}/`;
 					}}
 					className="flex flex-row justify-center items-center text-black text-3xl mr-5"
@@ -217,6 +232,8 @@ const MobileNavButton = ({ func, mobileMenuOpen }: MobileNavButtonProps) => {
 };
 
 const MobileDropDown = () => {
+	const basePath = getBasePath();
+	const links = getLinks(basePath);
 	return (
 		<motion.div
 			className="fixed top-20 w-screen px-10
