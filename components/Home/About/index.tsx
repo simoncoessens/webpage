@@ -34,7 +34,9 @@ export const About: FC = () => {
 						badge="ICCV 2025 · Spotlight"
 						description="Spotlight talk at ICCV 2025 (SP4V workshop). Training‑free 360° panorama generation from arbitrarily posed inputs using SEVA multi‑view diffusion and a pose‑aware stitcher. Ongoing research."
 						mediaType="video"
-						mediaSrc={getAssetPath("/assets/multiviewpano_video.mp4")}
+						mediaSrc={getAssetPath(
+							"/assets/multiviewpano_video.mp4",
+						)}
 						mediaAlt="MultiViewPano demo"
 						logoSrc={getAssetPath("/assets/amadeus_logo.png")}
 						logoAlt="Amadeus logo"
@@ -52,9 +54,11 @@ export const About: FC = () => {
 					/>
 					<ProjectCard
 						title="Agentic Video Generation Pipeline (Amadeus)"
-						description="Developed an agentic pipeline for video generation during my internship at Amadeus, using LangGraph and experimenting with available video generation models to orchestrate automated script‑to‑video workflows."
+						description="Developed an agentic pipeline for video generation during my internship at Amadeus, using LangGraph and experimenting with available video generation models to orchestrate automated images‑to‑video workflows."
 						mediaType="video"
-						mediaSrc={getAssetPath("/assets/agentic_video_project.mp4")}
+						mediaSrc={getAssetPath(
+							"/assets/agentic_video_project.mp4",
+						)}
 						mediaAlt="Agentic video generation pipeline demo"
 						logoSrc={getAssetPath("/assets/amadeus_logo.png")}
 						logoAlt="Amadeus logo"
@@ -80,7 +84,9 @@ export const About: FC = () => {
 						mediaType="video"
 						mediaSrc={getAssetPath("/assets/gaussiandiffusion.mp4")}
 						mediaAlt="GaussianDiffusion demo"
-						logoSrc={getAssetPath("/assets/centralesupelec_logo.png")}
+						logoSrc={getAssetPath(
+							"/assets/centralesupelec_logo.png",
+						)}
 						logoAlt="CentraleSupélec logo"
 						onOpenMedia={(payload) => setLightboxMedia(payload)}
 						links={[
