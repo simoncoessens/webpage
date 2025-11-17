@@ -43,14 +43,13 @@ export const Hero: FC = () => {
 					<br />I also hold degrees in{" "}
 					<span className="font-bold">Computer Science</span> and{" "}
 					<span className="font-bold">Mathematics</span> from{" "}
-					<Highlight>KU Leuven</Highlight>. My research spans{" "}
-					<Highlight>AI</Highlight>,{" "}
-					<Highlight>diffusion models</Highlight>, and{" "}
-					<Highlight>NLP</Highlight>. I have{" "}
-					<Highlight>
-						over {date - CONFIG.EXPERIENCE_START_YEAR} years
-					</Highlight>{" "}
-					of experience in CS and math projects.
+					<Highlight>KU Leuven</Highlight>. My research focuses on{" "}
+					<Highlight>3D scene &amp; world generation</Highlight>,{" "}
+					<Highlight>multi-view diffusion</Highlight>,{" "}
+					<Highlight>3D Gaussian Splatting</Highlight>,{" "}
+					<Highlight>NeRFs</Highlight>, and{" "}
+					<Highlight>novel view synthesis</Highlight>, alongside
+					applied work on <Highlight>agentic AI systems</Highlight>.
 					<br />
 				</p>
 			</div>
