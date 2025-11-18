@@ -147,11 +147,18 @@ export const About: FC = () => {
 						real-time analysis.
 						<br />
 						<br />
-						<Highlight>A.N.N.A.</Highlight> - An AI assistant
-						designed to help developers and organizations assess
-						compliance with the EU AI Act. It won the 1st Prize and
-						the Most Innovative Solution award at the LEADS
-						Innovation Challenge.
+						<a
+							href="https://github.com/simoncoessens/DataJurists"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Highlight>A.N.N.A. 🔗</Highlight>
+						</a>{" "}
+						- An AI assistant designed to help developers and
+						organizations assess compliance with the EU AI Act. It
+						won the 1st Prize and the Most Innovative Solution award
+						at the LEADS Innovation Challenge. The full codebase is
+						open-source on GitHub for transparency and reuse.
 					</p>
 				</div>
 			</div>
